@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="FreelanceMoney.css">
   <title>FreelanceMoney</title>
 </head>
+
 <body>
   <header>
     <h1>Freelance Money Calculatrice</h1>
@@ -16,24 +18,39 @@
     <div class="sectionCalcul pricing">
       <fieldset class="form-container">
         <legend>Vos tarifs</legend>
-        <div>TH</div>
-        <div>TJM</div>
-        <div>Extra</div>
+        <div class="form-field">
+          <label>TH</label>
+          <input name="TauxHoraire"  type="number" placeholder="Ex : 70"></div>
+        <div class="form-field">
+          <label>TJM</label>
+          <input name="TauxHoraire" type="number" placeholder="Ex : 740"></div>
+        <div class="form-field">
+          <label>EXTRA</label>
+          <input name="TauxHoraire"  type="number" placeholder="Ex : 47"></div>
       </fieldset>
     </div>
 
     <div class="sectionCalcul qte">
       <fieldset class="form-container">
         <legend>Quantités</legend>
-        <div>TH</div>
-        <div>TJM</div>
-        <div>Extra</div>
+        <div class="form-field">
+          <label>TH</label>
+          <input name="QteTH"  type="number" placeholder="Ex : 140"></div>
+        <div class="form-field">
+          <label>TJM</label>
+          <input name="QteTJM" type="number" placeholder="Ex : 30"></div>
+        <div class="form-field">
+          <label>EXTRA</label>
+          <input name="QteExtras"  type="number" placeholder="Ex : 7"></div>
       </fieldset>
     </div>
-    <div class="sectionCalcul charges">
+
+    <div class="sectionCalcul fees">
       <fieldset class="form-container">
         <legend>Les charges</legend>
-        <div>Charges</div>
+        <div class="form-field">
+          <label>Charge</label>
+          <input name="Charges"  type="number" placeholder="Ex : 140"></div>
       </fieldset>
     </div>
     <div class="sectionCalcul validation">
@@ -43,6 +60,7 @@
       Ici le résultat
     </div>
   </form>
-<script src="FreelanceMoney.js"></script>
+  <script src="FreelanceMoney.js"></script>
 </body>
+
 </html>
