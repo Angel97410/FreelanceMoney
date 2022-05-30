@@ -3,12 +3,20 @@ body {
   background-size: cover;
 }
 
+
 header {
   text-align: center;
   font-family: 'Lobster', cursive;
-
 }
 
+.title{
+  margin-top: 2.3rem;
+}
+h4{
+  align-items: center;
+  text-align: center;
+  display:flex
+}
 .formCalcul {
   background-color: rgb(148, 218, 209);
   border-radius: 10px;
@@ -17,7 +25,26 @@ header {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  height: 500px;
+  height: 45rem;
+  width: 40rem;
+}
+input[type="number"]{
+  width: 6rem;
+}
+label {
+  display: block;
+  float: left;
+  width: 5rem;
+  margin-right: 1rem;
+  color: rgb(18, 58, 65);
+  font-weight: 400;
+}
+
+.sectionCalcul{
+  display: flex;
+  justify-content: space-around;
+  /* height: 6rem; */
+  width: 1em;
 }
 
 
@@ -27,18 +54,18 @@ header {
   display: flex;
 }
 
-legend {
-  display: flex;
-  text-align: center;
-
-}
 
 .form-container {
   display: flex;
-  justify-content: space-around;
+  
 
 }
 
 .sectionCalcul {
   justify-content: center;
+}
+
+.result{
+  display: flex;
+  justify-content: space-around;
 }

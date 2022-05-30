@@ -21,7 +21,7 @@
 
 <body>
   <header>
-    <h1 class="mb-5">Freelance Money Calculatrice</h1>
+    <h1 class="title mb-5">Freelance Money Calculatrice</h1>
   </header>
   <main class="container">
   <form class="formCalcul shadow" id="formCalculGain">
@@ -30,14 +30,14 @@
         <h4>Vos tarifs</h4>
         <div class="form-container">
         <div class="form-field ">
-          <label>TH</label>
-          <input class="form-control" name="TauxHoraire" type="number" placeholder="Ex : 70"></div>
+          <label>Taux Horaire</label>
+          <input class="form-control" name="TauxHoraire" id="TauxHoraire" type="number" placeholder="Ex : 70"></div>
         <div class="form-field">
-          <label>TJM</label>
-          <input class="form-control" name="TauxHoraire" type="number" placeholder="Ex : 740"></div>
+          <label>Taux Journalier Moyen</label>
+          <input class="form-control" name="TauxJournalier" id="TauxJournalier" type="number" placeholder="Ex : 740"></div>
         <div class="form-field">
-          <label>EXTRA</label>
-          <input class="form-control" name="TauxHoraire" type="number" placeholder="Ex : 47"></div>
+          <label>EXTRAS</label>
+          <input class="form-control" name="TauxExtras" id="TauxExtras" type="number" placeholder="Ex : 47"></div>
       </div>
     </div>
 
@@ -45,14 +45,14 @@
         <h4>Quantités</h4>
         <div class="form-container">
           <div class="form-field">
-          <label>TH </label>
-          <input class="form-control" name="QteTH" type="number" placeholder="Ex : 140"></div>
+          <label>Heures effectuées </label>
+          <input class="form-control" name="QteTH" id="QteTH" type="number" placeholder="Ex : 140"></div>
         <div class="form-field">
-          <label>TJM </label>
-          <input class="form-control" name="QteTJM" type="number" placeholder="Ex : 30"></div>
+          <label>Jours travaillé </label>
+          <input class="form-control" name="QteTJM" id="QteTJM" type="number" placeholder="Ex : 30"></div>
         <div class="form-field">
-          <label>EXTRA </label>
-          <input class="form-control" name="QteExtras" type="number" placeholder="Ex : 7"></div>
+          <label>EXTRAS </label>
+          <input class="form-control" name="QteExtras" id="QteExtras" type="number" placeholder="Ex : 7"></div>
         </div>
     </div>
 
@@ -60,8 +60,8 @@
         <h4>Les charges</h4>
         <div class="form-container">
           <div class="form-field">
-          <label>Charge </label>
-          <input class="form-control" name="Charges" type="number" placeholder="Ex : 140"></div>
+          <label>Taux ACRE </label>
+          <input class="form-control" name="Charges" id="Charges" type="number" placeholder="Ex : 140"></div>
         </div>
     </div>
 
@@ -69,7 +69,8 @@
       <button onclick="CalculGain()" type="button" class="btn btn-primary">Calculer</button>
     </div>
     <div class="sectionCalcul result">
-      Ici le résultat
+      <button id="resultB">Brut €</button>
+      <button id="resultN">Net €</button>
     </div>
   </form>
 </main>
