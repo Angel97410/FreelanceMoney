@@ -18,7 +18,7 @@ h4{
   display:flex
 }
 main {
-  background-color: rgb(148, 218, 209);
+  background-color: rgb(191, 231, 213);
   border-radius: 10px;
   position: absolute;
   top: 50%;
@@ -27,46 +27,35 @@ main {
   transform: translate(-50%, -50%);
   height: 33rem;
 }
-input[type="number"]{
-  width: auto;
+
+fieldset {
+  height: 6.5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border-radius: 0.3rem;
+  border: 1px solid #0596af;
 }
-label {
-  display: block;
-  text-align: center;
-  width: 5rem;
-  margin-right: 1rem;
-  color: rgb(18, 58, 65);
-  font-weight: 400;
-}
-.formCalcul{
-  
-}
-.sectionCalcul{
+
+.sectionCalcul > div {
   display: flex;
-  justify-content: space-between;
-
+  flex-direction: column;
+  align-items: center;
 }
 
-
-.pricing, .qte,
-.form-field {
-  margin: 1.3rem;
+.form-container {
   display: flex;
   justify-content: space-around;
 }
 
 .fees{
   justify-content: flex-start;
-  margin: 3rem;
 }
-.form-container {
-  display: flex;
-}
-
-
 
 .validation, .result{
   display: flex;
   justify-content: space-around;
-  margin-top: 10rem;
+}
+  button{
+  color: white;
+  background-color: #0596af;
 }
