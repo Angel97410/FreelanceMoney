@@ -29,13 +29,9 @@ function disableInput() {
   if (th || QteTH != 0){
     document.getElementById("TauxJournalier").disabled = true;
     document.getElementById("QteTJM").disabled = true;
-  }else{
-    document.getElementById("TauxJournalier").disabled = false;
-    document.getElementById("QteTJM").disabled = false;
   }
   if (tjm || QteTJM != 0){
     document.getElementById("TauxHoraire").disabled = true;
     document.getElementById("QteTH").disabled = true;
   }
-  
 }
