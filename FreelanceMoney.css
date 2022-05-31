@@ -62,7 +62,9 @@ fieldset {
   display: flex;
   justify-content: space-around;
 }
-
+.result{
+  margin-top: 5px;
+}
 button {
   background-color: #59a985 ; /* Green */
   border: none;
