@@ -9,16 +9,19 @@ header {
   font-family: 'Lobster', cursive;
 }
 
-.title{
+.title {
   margin-top: 2.3rem;
 }
-h4{
+
+h4 {
   align-items: center;
   text-align: center;
-  display:flex
+  display: flex;
+  
 }
+
 main {
-  background-color: rgb(191, 231, 213);
+  background-color: #bfe7d566;
   border-radius: 10px;
   position: absolute;
   top: 50%;
@@ -26,6 +29,10 @@ main {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   height: 33rem;
+  box-sizing: content-box;
+  width: 100%;
+  border: solid #88ad9d 2px;
+  padding: 5px;;
 }
 
 fieldset {
@@ -33,10 +40,9 @@ fieldset {
   margin-left: 2rem;
   margin-right: 2rem;
   border-radius: 0.3rem;
-  border: 1px solid #0596af;
 }
 
-.sectionCalcul > div {
+.sectionCalcul>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -47,20 +53,18 @@ fieldset {
   justify-content: space-around;
 }
 
-.fees{
+.fees {
   justify-content: flex-start;
 }
 
-.validation, .result{
+.validation,
+.result {
   display: flex;
   justify-content: space-around;
 }
-  button{
-  color: white;
-  background-color: #0596af;
-}
-.resultB , .resultN{
-  background-color: #0d6efd;
+
+button {
+  background-color: #88ad9d ; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -68,5 +72,5 @@ fieldset {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  border-radius: 10px;
 }
