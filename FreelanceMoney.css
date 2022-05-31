@@ -16,8 +16,7 @@ header {
 h4 {
   align-items: center;
   text-align: center;
-  display: flex;
-  
+  display: block;
 }
 
 main {
