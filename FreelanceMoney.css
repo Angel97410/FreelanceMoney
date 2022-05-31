@@ -34,7 +34,11 @@ main {
   border: solid #88ad9d 2px;
   padding: 5px;;
 }
-
+@media only screen and (max-width: 600px) {
+  main {
+    border: none;
+  }
+}
 fieldset {
   height: 6.5rem;
   margin-left: 2rem;
